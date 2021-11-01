@@ -1502,7 +1502,8 @@
             if (localStorage.getItem("count_timer")) {
               var count_timer = localStorage.getItem("count_timer");
             } else {
-              var count_timer = 60 * 3;
+              var timmer = '<%# Eval("3")%>'
+              var count_timer = 60 * timmer;
             }
             var minutes = parseInt(count_timer / 60);
             var seconds = parseInt(count_timer % 60);
